@@ -8,9 +8,10 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
+# note: enable these lines if you didn't use Dockerfile
+# nltk.download('punkt')
+# nltk.download('wordnet')
+# nltk.download('omw-1.4')
 
 lemmatizer = WordNetLemmatizer()
 
