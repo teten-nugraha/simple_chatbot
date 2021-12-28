@@ -8,6 +8,11 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 
+# note: enable these lines if you didn't use Dockerfile
+# nltk.download('punkt')
+# nltk.download('wordnet')
+# nltk.download('omw-1.4')
+
 lemmatizer = WordNetLemmatizer()
 
 intents = json.loads(open('intents.json').read())
